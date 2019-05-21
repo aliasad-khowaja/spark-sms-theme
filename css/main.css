@@ -21,8 +21,9 @@ body {
 }
 #menu {
 	background-color: #E2E2E2;
-	padding-top: 15px;
 	margin: 0px;
+	padding: 0px;
+	padding-top: 15px;
 }
 #menu ul {
 	padding: 0px;
@@ -30,9 +31,10 @@ body {
 }
 #menu ul li {
 	padding-left: 20px;
-	padding-bottom: 2px;
-	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-top: 3px;
 	margin: 0px;
+	width: 95%;
 }
 #menu ul li:hover {
 	background-color: #F1F1F1;
