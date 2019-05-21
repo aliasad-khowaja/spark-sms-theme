@@ -1,0 +1,119 @@
+body {
+	background-color: #F1F1F1;
+	font-size: 14px;
+}
+#header {
+	background-color: #2C2C2C;
+	padding: 15px 30px 15px 30px;
+	color: #CCCCCC;
+	border-bottom: 5px #CCCCCC solid;
+}
+#signout-lnk {
+	padding: 5px;
+	background-color: #CCCCCC;
+	color: #2C2C2C;
+	font-size: 12px;
+	font-weight: bold;
+}
+#signout-lnk:hover {
+	text-decoration: none;
+	background-color: #E2E2E2;
+}
+#menu {
+	background-color: #E2E2E2;
+	padding-top: 15px;
+	margin: 0px;
+}
+#menu ul {
+	padding: 0px;
+	list-style: none;
+}
+#menu ul li {
+	padding-left: 20px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	margin: 0px;
+}
+#menu ul li:hover {
+	background-color: #F1F1F1;
+	font-weight: bold;
+}
+#menu ul li a {
+	display: block;
+	color: #2C2C2C;
+}
+#menu ul li a:hover {
+	text-decoration: none;
+}
+#menu li.selected {
+	background-color: #F1F1F1;
+	font-weight: bold;
+}
+
+#login-section {
+	margin: 50px auto;
+	width: 400px;
+	height: 160px;
+	background-color: #E2E2E2;
+	color: #2C2C2C;
+}
+#login-section h5 {
+	text-align: center;
+	padding: 7px;
+	background-color:  #CCCCCC;
+}
+
+#login-section input[type='text'],
+#login-section input[type='password'] {
+	width: 200px;
+}
+
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+
+.tar {
+	text-align: right;
+}
+.tal {
+	text-align: left
+}
+
+.mr-2 {
+	margin-right: 2px !important;
+}
+.mr-5 {
+	margin-right: 5px !important;
+}
+.mr-10 {
+	margin-right: 10px !important;
+}
+.mr-15 {
+	margin-right: 15px !important;
+}
+.mr-20 {
+	margin-right: 20px !important;
+}
+
+.mt-2 {
+	margin-top: 2px !important;
+}
+.mt-5 {
+	margin-top: 5px !important;
+}
+.mt-10 {
+	margin-top: 10px !important;
+}
+.mt-15 {
+	margin-top: 15px !important;
+}
+.mt-20 {
+	margin-top: 20px !important;
+}
+
+.pr-35 {
+	padding-right: 35px;
+}
