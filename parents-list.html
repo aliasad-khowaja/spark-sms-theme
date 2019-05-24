@@ -30,9 +30,9 @@
 			<div id="menu" class="col-sm-2">
 				<ul>
 					<li><a href="#">Dashboard</a></li>
-					<li class="selected"><a href="#">Students</a></li>
+					<li><a href="#">Students</a></li>
 					<li><a href="#">Teachers</a></li>
-					<li><a href="#">Parents</a></li>
+					<li class="selected"><a href="#">Parents</a></li>
 					<li><a href="#">Classes</a></li>
 					<li><a href="#">Sections</a></li>
 					<li><a href="#">Subjects</a></li>
@@ -47,17 +47,17 @@
 			<div id="main-content" class="col-sm-10">
 				<div class="row top-bar">
 					<div class="col-sm-4">
-						<h5>Students List</h5>
+						<h5>Parents List</h5>
 					</div>
 					<div class="col-sm-8">
-						<button class="blue-btn wd-150 fr">New Student</button>
+						<button class="blue-btn wd-150 fr">New Parent</button>
 					</div>
 				</div>
 				<div class="row mt-20 mb-20">
 
 					<div class="col-sm-12 datatable">
 						
-						<table id="students" class="hover row-border" style="width:100%">
+						<table id="parents" class="hover row-border" style="width:100%">
 							<thead>
 				            <tr>
 				                <th>Name</th>
@@ -421,7 +421,7 @@
 	
 	<script>
 		$(document).ready(function() {
-		    $('#students').DataTable({
+		    $('#parents').DataTable({
 		    	"pageLength": 50
 		    });
 		} );
