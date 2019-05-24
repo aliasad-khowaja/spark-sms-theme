@@ -70,6 +70,21 @@ body {
 	width: 200px;
 }
 
+.top-bar {
+	padding: 5px;
+	background-color: #CCCCCC;
+}
+
+.add-btn {
+	background-color: #008CBA;
+	color: white;
+	border: 1px solid #008CBA;
+}
+
+.datatable input[type='search'] {
+	width: 250px;
+}
+
 .fr {
 	float: right;
 }
@@ -116,6 +131,32 @@ body {
 	margin-top: 20px !important;
 }
 
+.mb-2 {
+	margin-bottom: 2px !important;
+}
+.mb-5 {
+	margin-bottom: 5px !important;
+}
+.mb-10 {
+	margin-bottom: 10px !important;
+}
+.mb-15 {
+	margin-bottom: 15px !important;
+}
+.mb-20 {
+	margin-bottom: 20px !important;
+}
+
 .pr-35 {
 	padding-right: 35px;
+}
+
+.wd-100 {
+	width: 100px;
+}
+.wd-150 {
+	width: 150px;
+}
+.wd-200 {
+	width: 200px;
 }
