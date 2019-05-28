@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spark SMS</title>
+	<link rel="stylesheet" type="text/css" href="./static/vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./static/vendor/jquery-datepick/jquery.datepick.css">
+	<link rel="stylesheet" type="text/css" href="./static/custom/css/main.css">
+
+</head>
+<body>
+
+	<div id="header">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Spark SMS</h3>
+			</div>
+			<div class="col-sm-8">
+				<div class="fr mt-10">
+					<span class="mr-20">Welcome: Admin</span>
+					<a id="signout-lnk" href="#">Sign out</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="body-content" class="container-fluid">
+		<div class="row">
+
+			<div id="menu" class="col-sm-2">
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#">Students</a></li>
+					<li><a href="#">Teachers</a></li>
+					<li><a href="#">Parents</a></li>
+					<li class="selected"><a href="#">Classes</a></li>
+					<li><a href="#">Sections</a></li>
+					<li><a href="#">Subjects</a></li>
+					<li><a href="#">Attendance</a></li>
+					<li><a href="#">Exams</a></li>
+					<li><a href="#">Payments</a></li>
+					<li><a href="#">Advance Filter</a></li>
+					<li><a href="#">Settings</a></li>
+				</ul>
+			</div>
+
+			<div id="main-content" class="col-sm-10">
+				<div class="row top-bar">
+					<div class="col-sm-4">
+						<h5>New Academic Year</h5>
+					</div>
+					<div class="col-sm-8">
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 pr-100 mt-20">
+						<form class="form-inline" autocomplete="off">
+
+							<div class="col-sm-2 tar mt-10">Title *</div>
+							<input type="text" class="col-sm-3 mt-10" >
+
+							<div class="col-sm-7"></div>
+							<div class="col-sm-2 tar mt-10">Start Date *</div>
+							<input type="text" class="col-sm-3 mt-10" id="startDate" readonly="true">
+
+							<div class="col-sm-2 tar mt-10">End Date *</div>
+							<input type="text" class="col-sm-3 mt-10" id="endDate" readonly="true">
+
+							<div class="col-sm-2"></div>
+							<div class="col-sm-2 tar mt-10">Remarks</div>
+							<input type="text" class="col-sm-8 mt-10">
+
+
+							<div class="col-sm-10 tar mt-20">
+								<button class="white-btn wd-100 mr-5" >Clear</button>
+								<button class="blue-btn wd-100">Save</button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="./static/vendor/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./static/vendor/jquery-datepick/jquery.plugin.min.js"></script>
+	<script type="text/javascript" src="./static/vendor/jquery-datepick/jquery.datepick.min.js"></script>
+
+	<script>
+		$('#startDate').datepick({dateFormat: 'dd-M-yyyy'}); 
+		$('#endDate').datepick({dateFormat: 'dd-M-yyyy'}); 
+	</script>
+
+</body>
+</html>
