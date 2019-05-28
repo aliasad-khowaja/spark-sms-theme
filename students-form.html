@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spark SMS</title>
+	<link rel="stylesheet" type="text/css" href="./static/vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./static/vendor/fontawesome-5.8.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./static/vendor/jquery-datepick/jquery.datepick.css">
+	<link rel="stylesheet" type="text/css" href="./static/custom/css/main.css">
+
+	
+
+</head>
+<body>
+
+	<div id="header">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Spark SMS</h3>
+			</div>
+			<div class="col-sm-8">
+				<div class="fr mt-10">
+					<span class="mr-20">Welcome: Admin</span>
+					<a id="signout-lnk" href="#">Sign out</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="body-content" class="container-fluid">
+		<div class="row">
+
+			<div id="menu" class="col-sm-2">
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+					<li class="selected"><a href="#">Students</a></li>
+					<li><a href="#">Teachers</a></li>
+					<li><a href="#">Parents</a></li>
+					<li><a href="#">Classes</a></li>
+					<li><a href="#">Sections</a></li>
+					<li><a href="#">Subjects</a></li>
+					<li><a href="#">Attendance</a></li>
+					<li><a href="#">Exams</a></li>
+					<li><a href="#">Payments</a></li>
+					<li><a href="#">Advance Filter</a></li>
+					<li><a href="#">Settings</a></li>
+				</ul>
+			</div>
+
+			<div id="main-content" class="col-sm-10">
+				<div class="row top-bar">
+					<div class="col-sm-4">
+						<h5>New Student</h5>
+					</div>
+					<div class="col-sm-8">
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 pr-100 mt-20">
+							<div class="container">
+
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="personal-info-tab" data-toggle="tab" 
+									href="#personal-info" role="tab" aria-controls="personal-info" aria-selected="true">Personal Information</a>
+								</li>
+							    <li class="nav-item">
+							    	<a class="nav-link" id="academic-info-tab" data-toggle="tab" 
+							    	href="#academic-info" role="tab" aria-controls="academic-info" aria-selected="false">Academic Information</a>
+							    </li>
+							    <li class="nav-item">
+							    	<a class="nav-link" id="admission-test-tab" data-toggle="tab" 
+							    	href="#admission-test" role="tab" aria-controls="admission-test" aria-selected="false">Admission Test Result</a>
+							    </li>
+							    <li class="nav-item">
+							    	<a class="nav-link" id="student-photo-tab" data-toggle="tab" 
+							    	href="#student-photo" role="tab" aria-controls="student-photo" aria-selected="false">Student Photo</a>
+							    </li>
+							</ul>
+
+							<div class="tab-content">
+
+								<div id="personal-info" class="tab-pane fade show active" role="tabpanel" aria-labelledby="personal-info-tab" style="min-height: 300px">
+									<form class="form-inline" autocomplete="off">
+
+							      		<div class="col-sm-2 tar mt-10">Name *</div>
+										<input type="text" class="col-sm-4 mt-10" >
+
+								    	<div class="col-sm-2 tar mt-10">Father Name *</div>
+										<input type="text" class="col-sm-4 mt-10" >
+
+										<div class="col-sm-2 tar mt-10">Surname *</div>
+										<input type="text" class="col-sm-4 mt-10">
+
+										<div class="col-sm-2 tar mt-10">Gender *</div>
+										<select class="col-sm-2 mt-10" style="height: 28px;">
+											<option value=""> - Select Gender - </option>
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+										</select>
+										<div class="col-sm-2"></div>
+
+										<div class="col-sm-2 tar mt-10">Date of Birth *</div>
+										<input type="text" class="col-sm-4 mt-10" id="dateOfBirth" readonly="true">
+
+										<div class="col-sm-2 tar mt-10">Place of Birth *</div>
+										<input type="text" class="col-sm-4 mt-10" >
+
+										<div class="col-sm-2 tar mt-10">Religion *</div>
+										<input type="text" class="col-sm-4 mt-10">
+
+										<div class="col-sm-2 tar mt-10">Nationality </div>
+										<input type="text" class="col-sm-4 mt-10" >
+										
+										<div class="col-sm-2 tar mt-10">Native Language </div>
+										<input type="text" class="col-sm-4 mt-10" >
+
+										<div class="col-sm-2 tar mt-10">Blood Group</div>
+										<input type="text" class="col-sm-4 mt-10">
+
+										<div class="col-sm-2 tar mt-10">Father's NIC *</div>
+										<input type="text" class="col-sm-4 mt-10" id="nic">
+
+										<div class="col-sm-6"></div>
+
+										<div class="col-sm-2 tar mt-10">Father's phone#</div>
+										<input type="text" class="col-sm-4 mt-10">
+
+										<div class="col-sm-2 tar mt-10">Father's email</div>
+										<input type="text" class="col-sm-4 mt-10">
+
+										<div class="col-sm-2 tar mt-10">Mother's phone#</div>
+										<input type="text" class="col-sm-4 mt-10">
+
+										<div class="col-sm-2 tar mt-10">Mothers's email</div>
+										<input type="text" class="col-sm-4 mt-10">
+										
+
+										<div class="col-sm-2 tar mt-10">Present Address *</div>
+										<input type="text" class="col-sm-10 mt-10" >
+
+										<div class="col-sm-2 tar mt-10">Permanent Address</div>
+										<input type="text" class="col-sm-10 mt-10">
+
+									</form>
+							    </div>
+
+
+
+
+
+
+							    <div id="academic-info" class="tab-pane fade" role="tabpanel" aria-labelledby="academic-info-tab" style="min-height: 300px">
+							    	<form class="form-inline" autocomplete="off">
+
+
+							    		<div class="col-sm-3 tar mt-20">Last school Attended </div>
+										<input type="text" class="col-sm-7 mt-20" autocomplete="on" >
+										<div class="col-sm-2 tar mt-20">
+											<a href="javascript:viod(0);"><i class="fa fa-times-circle font-size: 16px" aria-hidden="true"></i></a>
+										</div>
+
+										<div class="col-sm-3 tar mt-10">Last class passed </div>
+										<input type="text" class="col-sm-1 mt-10" >
+
+										<div class="col-sm-2 tar mt-10">Passing year </div>
+										<input type="text" class="col-sm-1 mt-10" >
+
+										<div class="col-sm-2 tar mt-10">Result </div>
+										<input type="text" class="col-sm-1 mt-10" >
+
+										<div class="col-sm-12 mt-20" style="border-top: 1px solid #aaaaaa;"></div>
+										<div class="col-sm-12 tar mt-20" >
+											<a href="javascript:viod(0);"><i class="fa fa-plus-circle font-size: 16px" aria-hidden="true"></i></a>
+										</div>
+
+							    	</form>
+							    </div>
+
+
+
+
+							    <div id="admission-test" class="tab-pane fade" role="tabpanel" aria-labelledby="admission-test-tab" style="min-height: 300px">
+
+							    	<form class="form-inline" autocomplete="off">
+							    		<div class="col-sm-1"></div>
+							    		<div class="col-sm-6 mt-10">
+
+							    			<table cellpadding="5px">
+							    				<tr>
+							    					<th>Remarks:</th>
+							    				</tr>
+								    			<tr>
+								    				<td>
+								    					<input type="text" class="col-sm-12" value="Interview" placeholder="Subject" style="color: red;" >
+								    				</td>
+								    				<td>
+								    					<input type="text" class="col-sm-12" placeholder="Enter Remarks" >
+								    				</td>
+								    				<td>
+								    					<a href="javascript:viod(0);"><i class="fa fa-times-circle font-size: 16px" aria-hidden="true"></i></a>
+								    				</td>
+								    			</tr>
+								    			<tr>
+								    				<td>
+								    					<input type="text" class="col-sm-12" value="Basic Math" placeholder="Subject" style="color: red;" >
+								    				</td>
+								    				<td>
+								    					<input type="text" class="col-sm-12" placeholder="Enter Remarks" >
+								    				</td>
+								    				<td>
+								    					<a href="javascript:viod(0);"><i class="fa fa-times-circle font-size: 16px" aria-hidden="true"></i></a>
+								    				</td>
+								    			</tr>
+								    			<tr>
+								    				<td>
+								    					<input type="text" class="col-sm-12" value="English" placeholder="Subject" style="color: red;">
+								    				</td>
+								    				<td>
+								    					<input type="text" class="col-sm-12" placeholder="Enter Remarks" >
+								    				</td>
+								    				<td>
+								    					<a href="javascript:viod(0);"><i class="fa fa-times-circle font-size: 16px" aria-hidden="true"></i></a>
+								    				</td>
+								    			</tr>
+								    			<tr style="border-top: 1px solid #aaaaaa;">
+								    				<td></td><td></td>
+								    				<td>
+								    					<a href="javascript:viod(0);"><i class="fa fa-plus-circle font-size: 16px" aria-hidden="true"></i></a>
+								    				</td>
+								    			</tr>
+								    		</table>
+							    		</div>
+							    		<div class="col-sm-5"></div>
+
+							    		<div class="col-sm-2 tar mt-20">Test Date *</div>
+										<input type="text" class="col-sm-2 mt-20" id="testDate" readonly="true">
+
+										<div class="col-sm-2 tar mt-20">Eligible for class *</div>
+										<input type="text" class="col-sm-2 mt-20" >
+
+										<div class="col-sm-4"></div>
+
+										<div class="col-sm-2 tar mt-10">Overall Remarks</div>
+										<input type="text" class="col-sm-10 mt-10" >
+							    		
+							    	</form>
+
+							    </div>
+
+
+							    <div id="student-photo" class="tab-pane fade" role="tabpanel" aria-labelledby="student-photo-tab" style="min-height: 300px; padding-left: 50px">
+							    	
+							    	<div class="col-sm-3">
+							    		<img src="./static/images/default-person.jpg" class="mt-20 ml-20" style="width: 200px;" />
+							    	</div>
+							    	<div class="col-sm-4 mt-15">
+							    		<div class="custom-file">
+											<input type="file" class="custom-file-input" id="customFile">
+										    <label class="custom-file-label" for="customFile">Choose file</label>
+										</div>
+							    	</div>
+
+							    </div>
+
+
+							    <div class="col-sm-12 tar mt-20">
+									<button class="white-btn wd-100 mr-5" >Clear</button>
+									<!-- <button class="white-btn wd-150 mr-5" >Save and Add New</button> -->
+									<button class="blue-btn wd-100">Save</button>
+								</div>
+
+						    </div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="./static/vendor/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./static/vendor/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./static/vendor/jquery-datepick/jquery.plugin.min.js"></script>
+	<script type="text/javascript" src="./static/vendor/jquery-datepick/jquery.datepick.min.js"></script>
+
+	<script>
+		$('#dateOfBirth').datepick({dateFormat: 'dd-M-yyyy'}); 
+		$('#testDate').datepick({dateFormat: 'dd-M-yyyy'}); 
+	</script>
+
+</body>
+</html>
